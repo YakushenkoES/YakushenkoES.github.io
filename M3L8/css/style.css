@@ -1,0 +1,29 @@
+.body{
+  height: 720px;
+}
+h1{
+  text-transform: uppercase; 
+  margin-bottom: 133px;
+
+}
+.section{
+  margin-top: 140px;
+  
+}
+
+.feature{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.feature .img-container{
+  height: 136px;
+}
+
+.feature p {
+  margin-top: 36px;
+  bottom: 0px;
+
+  font-family: "Arial", sans-serif;
+  font-style: 14px;
+}
