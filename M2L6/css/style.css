@@ -1,0 +1,47 @@
+:root {
+  --header-height: 100px;
+  --content-width: 1140px;
+}
+
+html * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  width: var(--content-width);
+}
+
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: var(--content-width);
+  height: var(--header-height);
+
+  padding: 0 100px;
+  background-color: black;
+}
+
+.logo {
+  float: left;
+}
+
+.nav {
+  float: right;
+}
+
+.page-header a {
+  line-height: var(--header-height);
+  margin: 0 20px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+
+.content {
+  margin-top: calc(20px + var(--header-height));
+}
