@@ -7,7 +7,7 @@ img{
     border-radius:3px;
 }
 p{
-    text-indent: 1.5em;
+    text-indent: 0;
     background-color:beige;
 }
 
@@ -15,8 +15,11 @@ h1{
     text-align: center;
 }
 p::first-letter{
-    font-size: 2em;
+    font-size: 4em;
     color:red;
+    float: left;
+    margin: 0;
+    padding: 0;
 }
 
 
