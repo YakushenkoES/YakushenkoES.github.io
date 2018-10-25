@@ -1,6 +1,8 @@
 # Yakushenko Evgeny
 My test work
 
+[ПРОЕКТ] (https://YakushenkoES.github.io/project/Index.html "Проект") - штукатурка главный экран адаптив
+
 [M2L6](https://YakushenkoES.github.io/M2L6/Index.html "шапка черная") - шапка черная
 
 [M2L4](https://YakushenkoES.github.io/M2L4/Index.html "книга") - книга
@@ -13,7 +15,5 @@ My test work
 
 [M5L13](https://YakushenkoES.github.io/M5L13/Index.html "Pixel perfect") - форма зеленая pixel *perfect*
 
-[M5L16](https://YakushenkoES.github.io/M5L16/Index.html "штукатурка главный экран адаптив") - штукатурка главный экран адаптив
-
-[M5L16 Sliders](https://YakushenkoES.github.io/project/Index.html "слайдеры") - слайдеры bootstrap, photorama, slick
+[M5L16 Sliders](https://YakushenkoES.github.io/M5L16/Index.html "слайдеры") - слайдеры bootstrap, photorama, slick
 
