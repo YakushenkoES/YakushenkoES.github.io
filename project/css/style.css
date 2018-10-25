@@ -270,8 +270,8 @@ section .slick-btn.slick-next {
   }
   .feature-container {
     margin-top: 5.6rem;
-    width: calc(100% - 20px);
-    left: 10px;
+    width: calc(100% - 3rem);
+    left: 1.5rem;
   }
 }
 @media (max-width: 767.98px) {
