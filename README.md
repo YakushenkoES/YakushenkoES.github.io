@@ -1,7 +1,7 @@
 # Yakushenko Evgeny
 My test work
 
-[ПРОЕКТ] (https://YakushenkoES.github.io/project/Index.html "Проект") - штукатурка главный экран адаптив
+[ПРОЕКТ](https://YakushenkoES.github.io/project/Index.html "Проект") - штукатурка главный экран адаптив
 
 [M2L6](https://YakushenkoES.github.io/M2L6/Index.html "шапка черная") - шапка черная
 
