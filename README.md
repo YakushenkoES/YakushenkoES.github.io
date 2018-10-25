@@ -15,3 +15,5 @@ My test work
 
 [M5L16](https://YakushenkoES.github.io/M5L16/Index.html "штукатурка главный экран адаптив") - штукатурка главный экран адаптив
 
+[M5L16 Sliders](https://YakushenkoES.github.io/M5L16/Slider.html "слайдеры") - слайдеры bootstrap, photorama, slick
+
