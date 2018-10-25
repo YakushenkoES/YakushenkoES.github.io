@@ -25,7 +25,7 @@ html {
 body {
   font-family: "Proxima Nova regular", sans-serif;
 }
-input {
+input button {
   outline: none;
 }
 a:hover {
@@ -232,8 +232,12 @@ section .slick-btn.slick-next {
   .header .wrap-block {
     text-align: center;
   }
+  section {
+    padding-top: 5rem;
+  }
   .main {
     background-position: left top;
+    padding-bottom: 3.5rem;
   }
   .main-title {
     text-align: center;
@@ -263,6 +267,11 @@ section .slick-btn.slick-next {
   }
   .main-form-note-container {
     text-align: center;
+  }
+  .feature-container {
+    margin-top: 5.6rem;
+    width: calc(100% - 20px);
+    left: 10px;
   }
 }
 @media (max-width: 767.98px) {
