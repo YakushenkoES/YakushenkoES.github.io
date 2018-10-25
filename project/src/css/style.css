@@ -25,18 +25,11 @@ html {
 body {
   font-family: "Proxima Nova regular", sans-serif;
 }
-input {
-  outline: none;
-}
-a:hover {
-  text-decoration: none;
-}
 .button {
   border-style: solid;
   border-width: 1px;
   border-radius: 0.8rem;
   border-color: #fcb303;
-  cursor: pointer;
   background: -webkit-gradient(linear, left bottom, left top, from(#f5ad00), to(#ffb504));
   background: -webkit-linear-gradient(bottom, #f5ad00 0%, #ffb504 100%);
   background: -o-linear-gradient(bottom, #f5ad00 0%, #ffb504 100%);
@@ -56,57 +49,6 @@ a:hover {
   background: -webkit-linear-gradient(bottom, #dc9b00 0%, #eaa500 100%);
   background: -o-linear-gradient(bottom, #dc9b00 0%, #eaa500 100%);
   background: linear-gradient(0deg, #dc9b00 0%, #eaa500 100%);
-}
-section {
-  text-align: center;
-  padding-top: 10rem;
-}
-.section-header {
-  font-size: 3.6rem;
-  font-family: "Proxima Nova bold", sans-serif;
-}
-.feature {
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-.feature h3 {
-  font-size: 2rem;
-  margin-bottom: 3rem;
-  font-family: "Proxima Nova bold", sans-serif;
-}
-.feature p {
-  font-size: 1.6rem;
-}
-.feature a {
-  color: #4aa223;
-}
-.feature-container {
-  margin-top: 13rem;
-}
-.feature-img-box {
-  margin-bottom: 6rem;
-}
-.feature-img-box img {
-  margin: 0 auto;
-  height: 9rem;
-}
-.slick-slide {
-  outline: none;
-}
-section .slick-btn {
-  display: block;
-  height: 100%;
-}
-section .slick-btn::before {
-  content: "";
-}
-section .slick-btn.slick-prev {
-  background: url('../img/slider/prev.svg') center no-repeat;
-  background-size: 80%;
-}
-section .slick-btn.slick-next {
-  background: url('../img/slider/next.svg') center no-repeat;
-  background-size: 80%;
 }
 .header {
   margin-top: 1rem;

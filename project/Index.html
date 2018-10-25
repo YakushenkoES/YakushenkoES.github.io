@@ -9,6 +9,9 @@
   <title>Автоматизированная штукатурка стен</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick-theme.css"/>
+
 </head>
 
 <body>
@@ -80,10 +83,88 @@
     </div>
   </main>
 
-
+  <section class="features">
+    <h2 class="section-header">Преимущества работы с нами</h2>
+    <div class="feature-container container">
+      <div class="feature">
+        <div class="feature-img-box">
+          <picture>
+            <source srcset="img/features/coin.svg">
+            <img src="img/features/coin.png" alt="Платите по факту">
+          </picture>
+        </div>
+        <h3>Платите по факту</h3>
+        <p>Вы оплачиваете выполненные<br>работы только после их выполнения.<br>Никаких скрытых доплат и промежуточных платежей.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-img-box">
+          <picture>
+            <source srcset="img/features/pact.svg">
+            <img src="img/features/pact.png" alt="Заключаем договор">
+          </picture>
+        </div>
+        <h3>Заключаем договор</h3>
+        <p>Перед началом работ заключаем договор на юридическое лицо.<br>Вы можете быть уверены, что все обязательства будут выполнены.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-img-box">
+          <picture>
+            <source srcset="img/features/clock.svg">
+            <img src="img/features/clock.png" alt="Точно в срок">
+          </picture>
+        </div>
+        <h3>Точно в срок</h3>
+        <p>Работаем строго по установленным срокам, которые прописаны в договоре. Если не успеваем,<br>Вы платите меньше</p>
+      </div>
+      <div class="feature">
+        <div class="feature-img-box">
+          <picture>
+            <source srcset="img/features/piggy-bank.svg">
+            <img src="img/features/piggy-bank.png" alt="Экономите на материалах">
+          </picture>
+        </div>
+        <h3>Экономите на материалах</h3>
+        <p>Мы являемся структурным подразделением компании поставщика строительных смесей <a href="http://gicema.ru">gicema.ru</a> и даём Вам самые выгодные цены.</p>
+      </div>
+    </div>
+  </section>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<script src="libs/slick-1.8.1/slick.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".feature-container").slick(
+      {
+        slidesToShow: 4,
+        infinite: true,
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              arrows: true,
+              prevArrow:'<button type="button" class="slick-prev slick-btn"></button>',
+              nextArrow:'<button type="button" class="slick-next slick-btn"></button>'
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: true,
+              prevArrow:'<button type="button" class="slick-prev slick-btn"></button>',
+              nextArrow:'<button type="button" class="slick-next slick-btn"></button>'
+            
+            }
+          }
+        ]
+      }
+    );
+  });
+</script>
 </body>
 
 </html>
