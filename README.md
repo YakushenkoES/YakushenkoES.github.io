@@ -15,5 +15,8 @@ My test work
 
 [M5L13](https://YakushenkoES.github.io/M5L13/Index.html "Pixel perfect") - форма зеленая pixel *perfect*
 
+
+[M5L16 Sliders](https://YakushenkoES.github.io/M5L16/Index.html "слайдеры") - слайдеры bootstrap photorama slick
+
 [M5L16 Sliders](https://YakushenkoES.github.io/M5L16/Index2.html "слайдеры") - слайдеры photorama
 
