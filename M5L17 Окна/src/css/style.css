@@ -1,0 +1,25 @@
+:root{
+  --error-col:rgb(236, 46, 46);
+}
+.modal-content{
+  background-color: var(--error-col);
+}
+.modal-header{
+  border: none;
+}
+.modal-footer{
+  border-bottom: solid 3px var(--error-col);
+  border-left: solid 3px var(--error-col);
+  border-right: solid 3px var(--error-col);
+}
+.modal-header .modal-title,span{
+  color:white;
+
+} 
+.modal-body{
+  border-left: solid 3px var(--error-col);
+  border-right: solid 3px var(--error-col);
+}
+.modal-body,.modal-footer{
+  background-color: #fff;
+}
