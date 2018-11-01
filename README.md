@@ -20,3 +20,4 @@ My test work
 
 [M5L16 Sliders](https://YakushenkoES.github.io/M5L16/Index2.html "слайдеры") - слайдеры photorama
 
+[M5L17 Modal](https://YakushenkoES.github.io/M5L17/Index.html "модальное окно") - модальное окно
