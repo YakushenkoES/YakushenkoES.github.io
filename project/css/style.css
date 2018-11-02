@@ -241,7 +241,6 @@ section.features .feature-img-box img {
   }
 }
 .popup {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -285,6 +284,19 @@ section.features .feature-img-box img {
 }
 body.popup-opened {
   overflow: hidden;
+}
+@media (max-width: 991.98px) {
+  .popup-window {
+    position: fixed;
+    width: calc(100% - 10rem);
+    max-width: 35rem;
+    top: 20rem;
+    left: 50%;
+    top: 2rem;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
 }
 .form {
   padding: 5rem 4.5rem;
