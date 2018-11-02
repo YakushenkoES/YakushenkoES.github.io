@@ -9,12 +9,13 @@
   <title>Автоматизированная штукатурка стен</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick.css" />
+  <link rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick-theme.css" />
 
 </head>
 
 <body>
+
 
   <main class="main">
     <div class="container">
@@ -33,7 +34,7 @@
           <div class="col-md-3 col-6">
             <div class="wrap">
               <div class="wrap-block">
-                <button class="button btn-header"><span>получить консультацию</span></button>
+                <button id="btn-consultation" class="button btn-header popup-btn"><span>получить консультацию</span></button>
               </div>
             </div>
 
@@ -59,7 +60,7 @@
 
           </div>
           <div class="offset-lg-2 col-lg-5 offset-md-2 col-md-8">
-            <form class="main-form">
+            <form class="main-form form">
               <h2>
                 Для расчёта точной стоимости <br>
                 закажите <strong>выезд замерщика</strong>
@@ -85,89 +86,84 @@
 
   <section class="features">
     <div class="container">
-       <h2 class="section-header">Преимущества работы с нами</h2>
-    <div class="feature-container">
-      <div class="feature">
-        <div class="feature-img-box">
-          <picture>
-            <source srcset="img/features/coin.svg">
-            <img src="img/features/coin.png" alt="Платите по факту">
-          </picture>
+      <h2 class="section-header">Преимущества работы с нами</h2>
+      <div class="feature-slider">
+        <div class="feature-block">
+          <div class="feature-img-box">
+            <picture>
+              <source srcset="img/features/coin.svg" >
+              <img src="img/features/coin.png" alt="Платите по факту">
+            </picture>
+          </div>
+          <h3>Платите по факту</h3>
+          <p>Вы оплачиваете выполненные<br>работы только после их выполнения.<br>Никаких скрытых доплат и промежуточных
+            платежей.</p>
         </div>
-        <h3>Платите по факту</h3>
-        <p>Вы оплачиваете выполненные<br>работы только после их выполнения.<br>Никаких скрытых доплат и промежуточных платежей.</p>
-      </div>
-      <div class="feature">
-        <div class="feature-img-box">
-          <picture>
-            <source srcset="img/features/pact.svg">
-            <img src="img/features/pact.png" alt="Заключаем договор">
-          </picture>
+        <div class="feature-block">
+          <div class="feature-img-box">
+            <picture>
+              <source srcset="img/features/pact.svg" type="image/svg">
+              <img src="img/features/pact.png" alt="Заключаем договор">
+            </picture>
+          </div>
+          <h3>Заключаем договор</h3>
+          <p>Перед началом работ заключаем договор на юридическое лицо.<br>Вы можете быть уверены, что все
+            обязательства будут выполнены.</p>
         </div>
-        <h3>Заключаем договор</h3>
-        <p>Перед началом работ заключаем договор на юридическое лицо.<br>Вы можете быть уверены, что все обязательства будут выполнены.</p>
-      </div>
-      <div class="feature">
-        <div class="feature-img-box">
-          <picture>
-            <source srcset="img/features/clock.svg">
-            <img src="img/features/clock.png" alt="Точно в срок">
-          </picture>
+        <div class="feature-block">
+          <div class="feature-img-box">
+            <picture>
+              <source srcset="img/features/clock.svg"  type="image/svg">
+              <img src="img/features/clock.png" alt="Точно в срок">
+            </picture>
+          </div>
+          <h3>Точно в срок</h3>
+          <p>Работаем строго по установленным срокам, которые прописаны в договоре. Если не успеваем,<br>Вы платите
+            меньше</p>
         </div>
-        <h3>Точно в срок</h3>
-        <p>Работаем строго по установленным срокам, которые прописаны в договоре. Если не успеваем,<br>Вы платите меньше</p>
-      </div>
-      <div class="feature">
-        <div class="feature-img-box">
-          <picture>
-            <source srcset="img/features/piggy-bank.svg">
-            <img src="img/features/piggy-bank.png" alt="Экономите на материалах">
-          </picture>
+        <div class="feature-block">
+          <div class="feature-img-box">
+            <picture>
+              <source srcset="img/features/piggy-bank.svg" type="image/svg">
+              <img src="img/features/piggy-bank.png" alt="Экономите на материалах">
+            </picture>
+          </div>
+          <h3>Экономите на материалах</h3>
+          <p>Мы являемся структурным подразделением компании поставщика строительных смесей <a href="http://gicema.ru">gicema.ru</a>
+            и даём Вам самые выгодные цены.</p>
         </div>
-        <h3>Экономите на материалах</h3>
-        <p>Мы являемся структурным подразделением компании поставщика строительных смесей <a href="http://gicema.ru">gicema.ru</a> и даём Вам самые выгодные цены.</p>
       </div>
     </div>
+
+
+
+    <div class="popup">
+      <div class="popup-window">
+        <button class="popup-close-btn"></button>
+        <div class="popup-content popup-form form">
+           <h4>Заинтересовало?</h4>
+          <p>Оставьте контактные данные<br>для связи</p>
+          <form action="#">
+            <label for="#popup-form-name">Ваше имя</label>
+            <input id="popup-form-name" type="text">
+            <label for="#popup-form-name">Номер телефона</label>
+            <input id="popup-form-phone" type="text">
+            <label for="#popup-form-message">Номер телефона</label>
+            <textarea id="popup-form-message" rows="5"></textarea>
+            <button class="button" type="submit">Оставьте заявку</button>
+          </form>
+          
+        </div>
+      </div>
     </div>
-   
+
   </section>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-<script src="libs/slick-1.8.1/slick.min.js"></script>
-<script>
-  $(document).ready(function(){
-    $(".feature-container").slick(
-      {
-        slidesToShow: 4,
-        infinite: true,
-        dots: false,
-        responsive: [
-          {
-            breakpoint: 992,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              arrows: true,
-              prevArrow:'<button type="button" class="slick-prev slick-btn"></button>',
-              nextArrow:'<button type="button" class="slick-next slick-btn"></button>'
-            }
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              arrows: true,
-              prevArrow:'<button type="button" class="slick-prev slick-btn"></button>',
-              nextArrow:'<button type="button" class="slick-next slick-btn"></button>'
-            
-            }
-          }
-        ]
-      }
-    );
-  });
-</script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
+  <script src="libs/slick-1.8.1/slick.min.js"></script>
+
+  <script src="js/scripts.js">  </script>
 </body>
 
 </html>
