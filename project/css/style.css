@@ -241,6 +241,7 @@ section.features .feature-img-box img {
   }
 }
 .popup {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
