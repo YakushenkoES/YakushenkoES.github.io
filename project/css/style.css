@@ -285,6 +285,7 @@ section.features .feature-img-box img {
 }
 body.popup-opened {
   overflow: hidden;
+  position: fixed;
 }
 @media (max-width: 991.98px) {
   .popup-window {
