@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" shape-rendering="geometricPrecision" viewBox="0 0 302.362204724409 302.362204724409" xmlns="http://www.w3.org/2000/svg">
+  <circle transform="scale(3.77952755905512)" cx="40" cy="40" r="35" fill="none" stroke-width="0.1" style="stroke:black;" />
+  <g id="SectorLines" style="stroke:#808080;stroke-width:0.25;stroke-dasharray:0.5;" transform="scale(3.77952755905512)">
+    <line x1="38.5" y1="40" x2="15.9375" y2="40" />
+    <line x1="38.7009618943233" y1="40.75" x2="19.1612637214369" y2="52.03125" />
+    <line x1="39.25" y1="41.2990381056767" x2="27.96875" y2="60.8387362785631" />
+    <line x1="40" y1="41.5" x2="40" y2="64.0625" />
+    <line x1="40.75" y1="41.2990381056767" x2="52.03125" y2="60.8387362785631" />
+    <line x1="41.2990381056767" y1="40.75" x2="60.8387362785631" y2="52.03125" />
+    <line x1="41.5" y1="40" x2="64.0625" y2="40" />
+    <line x1="41.2990381056767" y1="39.25" x2="60.8387362785631" y2="27.96875" />
+    <line x1="40.75" y1="38.7009618943233" x2="52.03125" y2="19.1612637214369" />
+    <line x1="40" y1="38.5" x2="40" y2="15.9375" />
+    <line x1="39.25" y1="38.7009618943233" x2="27.96875" y2="19.1612637214369" />
+    <line x1="38.7009618943233" y1="39.25" x2="19.1612637214369" y2="27.96875" />
+  </g>
+  <g id="SectorNames" transform="scale(3.77952755905512)" dominant-baseline="middle" style="font-family:Arial, sans-serif; font-size:2.64583333333333px; fill:black;" text-anchor="middle">
+    <text y="40">
+      <tspan dy="-0.5em" x="11.5625">180°</tspan>
+      <tspan dy="1em" x="11.5625">-I</tspan>
+    </text>
+    <text y="25.78125">
+      <tspan dy="-0.5em" x="15.37240257988">-150°</tspan>
+      <tspan dy="1em" x="15.37240257988">+aVR</tspan>
+    </text>
+    <text y="15.37240257988">
+      <tspan dy="-0.5em" x="25.78125">-120°</tspan>
+      <tspan dy="1em" x="25.78125">-II</tspan>
+    </text>
+    <text y="11.5625">
+      <tspan dy="-0.5em" x="40">-90°</tspan>
+      <tspan dy="1em" x="40">-aVF</tspan>
+    </text>
+    <text y="15.37240257988">
+      <tspan dy="-0.5em" x="54.21875">-60°</tspan>
+      <tspan dy="1em" x="54.21875">-III</tspan>
+    </text>
+    <text y="25.78125">
+      <tspan dy="-0.5em" x="64.62759742012">-30°</tspan>
+      <tspan dy="1em" x="64.62759742012"> +aVL</tspan>
+    </text>
+    <text y="40">
+      <tspan dy="-0.5em" x="68.4375">0°</tspan>
+      <tspan dy="1em" x="68.4375">+I</tspan>
+    </text>
+    <text y="54.21875">
+      <tspan dy="-0.5em" x="64.62759742012">+30°</tspan>
+      <tspan dy="1em" x="64.62759742012">-aVR</tspan>
+    </text>
+    <text y="64.62759742012">
+      <tspan dy="-0.5em" x="54.21875">+60°</tspan>
+      <tspan dy="1em" x="54.21875">+II</tspan>
+    </text>
+    <text y="68.4375">
+      <tspan dy="-0.5em" x="40">+90°</tspan>
+      <tspan dy="1em" x="40">+aVF</tspan>
+    </text>
+    <text y="64.62759742012">
+      <tspan dy="-0.5em" x="25.78125">+120°</tspan>
+      <tspan dy="1em" x="25.78125">+III</tspan>
+    </text>
+    <text y="54.21875">
+      <tspan dy="-0.5em" x="15.37240257988">+150°</tspan>
+      <tspan dy="1em" x="15.37240257988">-aVL</tspan>
+    </text>
+  </g>
+  <g id="ArrowsTicks" transform="scale(3.77952755905512)">
+    <g id="Ticks" style="stroke:black;stroke-width:0.25">
+      <line x1="31.5883810341681" y1="8.60741064560528" x2="30.2942858086555" y2="3.77778151415994" />
+      <line x1="68.1458256229943" y1="23.75" x2="72.4759526419165" y2="21.25" />
+      <line x1="72.5" y1="40" x2="77.5" y2="40" />
+      <line x1="40" y1="72.5" x2="40" y2="77.5" />
+      <line x1="23.75" y1="68.1458256229943" x2="21.25" y2="72.4759526419165" />
+      <line x1="8.60741064560528" y1="31.5883810341681" x2="3.77778151415994" y2="30.2942858086555" />
+    </g>
+    <path transform="rotate(-10.9039562418477 30.9413334214118 6.19259607988261) " d="M 30.9413334214118 6.19259607988261 l 5 1 q -1 -1 0 -2 Z" />
+    <path transform="rotate(-124.096043758152 70.3108891324554 22.5) " d="M 70.3108891324554 22.5 l 5 1 q -1 -1 0 -2 Z" />
+    <path transform="rotate(64.0960437581523 70.3108891324554 22.5) " d="M 70.3108891324554 22.5 l 5 1 q -1 -1 0 -2 Z" />
+    <path transform="rotate(-94.0960437581523 75 40) " d="M 75 40 l 5 1 q -1 -1 0 -2 Z" />
+    <path transform="rotate(94.0960437581523 75 40) " d="M 75 40 l 5 1 q -1 -1 0 -2 Z" />
+    <path transform="rotate(-4.09604375815232 40 75) " d="M 40 75 l 5 1 q -1 -1 0 -2 Z" />
+    <path transform="rotate(184.096043758152 40 75) " d="M 40 75 l 5 1 q -1 -1 0 -2 Z" />
+    <path transform="rotate(25.9039562418477 22.5 70.3108891324554) " d="M 22.5 70.3108891324554 l 5 1 q -1 -1 0 -2 Z" />
+    <path transform="rotate(214.096043758152 22.5 70.3108891324554) " d="M 22.5 70.3108891324554 l 5 1 q -1 -1 0 -2 Z" />
+    <path transform="rotate(100.903956241848 6.19259607988261 30.9413334214118) " d="M 6.19259607988261 30.9413334214118 l 5 1 q -1 -1 0 -2 Z" />
+    <path transform="rotate(289.096043758152 6.19259607988261 30.9413334214118) " d="M 6.19259607988261 30.9413334214118 l 5 1 q -1 -1 0 -2 Z" />
+    <path transform="rotate(-199.096043758152 30.9413334214118 6.19259607988261) " d="M 30.9413334214118 6.19259607988261 l 5 1 q -1 -1 0 -2 Z" />
+  </g>
+  <defs>
+    <path id="RadGraph_TopLeftArc" d="M 30.4236953312067,4.26074442730447 A 37,37 180, 0, 1 72.0429399400242,21.5" />
+    <path id="RadGraph_TopRigthArc" d="M 72.0429399400242,21.5 A 37,37 180, 0, 1 77,40" />
+    <path id="RadGraph_BottomRigthArc" d="M 40,77 A 37,37 180, 0, 0 77,40" />
+    <path id="RadGraph_BottomLeftArc" d="M 21.5,72.0429399400242 A 37,37 180, 0, 0 40,77" />
+    <path id="testID" d="M 4.26074442730447,30.4236953312067 A 37,37 180, 0, 0 21.5,72.0429399400242" />
+    <path id="test2ID" d="M 4.26074442730447,30.4236953312067 A 37,37 180, 0, 1 30.4236953312067,4.26074442730447" />
+  </defs>
+  <g id="SectorNames" transform="scale(3.77952755905512)" text-anchor="middle" style="fill:black; stroke:none; stroke-width:0.1;font-family:Arial, sans-serif; font-size:3.175px; " x="0" y="0">
+    <text>
+      <textPath xlink:href="#RadGraph_TopLeftArc" startOffset="50%">Резко влево</textPath>
+    </text>
+    <text>
+      <textPath xlink:href="#RadGraph_TopRigthArc" startOffset="50%">Влево</textPath>
+    </text>
+    <text dominant-baseline="hanging">
+      <textPath xlink:href="#RadGraph_BottomRigthArc" startOffset="50%">Нормальное положение ЭОС</textPath>
+    </text>
+    <text dominant-baseline="hanging">
+      <textPath xlink:href="#RadGraph_BottomLeftArc" startOffset="50%">Вправо</textPath>
+    </text>
+    <text dominant-baseline="hanging">
+      <textPath xlink:href="#testID" startOffset="50%">Резко вправо</textPath>
+    </text>
+    <text>
+      <textPath xlink:href="#test2ID" startOffset="50%">Резкое отклонение</textPath>
+    </text>
+  </g>
+  <g id="Angles" transform="scale(3.77952755905512)" style="stroke-width:0.5">
+    <line x1="40.6797308402775" y1="40.3169636963055" x2="58.126155740733" y2="48.452365234814" style="stroke:#4286f4" />
+    <line x1="40.1941142838269" y1="39.2755556302832" x2="45.1763809020504" y2="20.6814834742186" style="stroke:#d62427" />
+    <line x1="39.5698176727367" y1="40.6143640332167" x2="28.5284712729791" y2="56.3830408857798" style="stroke:#1cd828" />
+  </g>
+  <g id="AngleNames" transform="scale(3.77952755905512)" style="font-family:Arial, sans-serif; font-size:3.70416666666667px; font-weight:900; stroke:white; stroke-width:0.2;" text-anchor="middle">
+    <text style="fill:#4286f4" y="49.7202200200361" x="60.8450791018429" dy="1.85208333333333">QRS</text>
+    <text style="fill:#d62427" y="17.7837059953514" x="45.952838037358" dy="1.85208333333333">P</text>
+    <text style="fill:#1cd828" y="58.8404970186468" x="26.8077419639259" dy="1.85208333333333">T</text>
+  </g>
+</svg>

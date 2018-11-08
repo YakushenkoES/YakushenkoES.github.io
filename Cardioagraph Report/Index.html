@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Макет заключения ЭКГ</title>
+    <link rel="stylesheet" type="text/css" href="css/ECGReport.css">
+    <link rel="shortcut icon" type="image/png" href="img/logo_favicon.png">
+</head>
+
+<body>
+    <main>
+        <div id="PreviewArea" class="PreviewArea">
+            <div class="Page Page1">
+
+                <div class="Page1Header">
+                    <div class="Incart_logo">
+                        <a href="https://www.incart.ru">
+                            <img type="image/svg+xml" src="svg/incart_logo.svg" alt="incart logo">
+                        </a>
+                    </div>
+                    <div class="Organization">
+                        <div class="Organization_name">"Название медицинского учреждения"</div>
+                        <div class="Organization_adress"><address>Россия, 123456, Город, название улицы, дом</address></div>
+                        <div class="Organization_phone">
+                            <strong>Тел/.факс: </strong><a href="tel:+78124955537">+7-(812)-495-55-37</a><span>; </span><strong>Тел.: </strong><a href="tel:+78124955537">+7-(812)-495-55-37</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="left">
+                    <div class="MedicalReport">
+                        <div contenteditable="true">
+                            <h3>Электрокардиограмма</h3>
+                            <div class="Section" id="PatientData">
+  <div>
+    <span>ФИО: </span>
+    <span class="Data">Иванов Петр Сидорович (М)</span>
+    <span>.</span>
+  </div>
+  <div>
+    <span>Дата рождения: </span>
+    <span class="Data">15.05.1960</span>
+    <span>, возраст: </span>
+    <span class="Data">50</span>
+    <span>.</span>
+  </div>
+  <div>
+    <span>Адрес: Спб, выборгское шоссе 22а, тел.: </span>
+    <a class="L" href="tel:+7-(921)-123-45-67">+7-(921)-123-45-67</a>
+    <span>.</span>
+  </div>
+</div>
+                            <div class="Section" id="ExaminationData">
+  <div>
+    <span>Обследование № </span>
+    <span class="Data">1234</span>
+    <span>, дата: </span>
+    <span class="Data">15.05.2010</span>
+    <span>, время: </span>
+    <span class="Data">12:00</span>
+    <span>. Цель: выявление заболеваний сердца на начальных этапах и их предотвращение. Направлен: терапевт Петров Петр Петрович. </span>
+  </div>
+</div>
+                            <div class="Section" id="ReportDataText">
+  <div>
+    <span>Нарушения ритма: первое нарушения ритма сердца; второе нарушения ритма сердца; третье нарушения ритма сердца.</span>
+  </div>
+  <div>
+    <span>PQ </span>
+    <span class="Data">155</span>
+    <span> мс, P </span>
+    <span class="Data">116</span>
+    <span> мс, угол P </span>
+    <span class="Data">-75</span>
+    <span>°.</span>
+  </div>
+  <div>
+    <span>QRS </span>
+    <span class="Data">120</span>
+    <span> мс, угол QRS </span>
+    <span class="Data">25</span>
+    <span>°, переходная зона </span>
+    <span class="Data">V2-V3</span>
+    <span>, индекс Соколова-Лайона </span>
+    <span class="Data">0.2</span>
+    <span> мВ.</span>
+  </div>
+  <div>
+    <span>Депрессия ST от </span>
+    <span class="Data">1</span>
+    <span> до </span>
+    <span class="Data">449</span>
+    <span> мкВ. Элевация ST от </span>
+    <span class="Data">1</span>
+    <span> до </span>
+    <span class="Data">301</span>
+    <span> мкВ. </span>
+  </div>
+  <div>
+    <span>QT </span>
+    <span class="Data">385</span>
+    <span> мс, QTc </span>
+    <span class="Data">387</span>
+    <span> мс, QTd </span>
+    <span class="Data">123</span>
+    <span> мс, угол T </span>
+    <span class="Data">125</span>
+    <span>°.</span>
+  </div>
+</div>
+                        </div>
+                        <div class="Section ECGGraph ECGGraphRadial">
+                            <div>
+                                <img src="svg/RadialGraph.svg" alt="Complex angles graph">
+                            </div>
+                        </div>
+                        <div class="Section" contenteditable="true">
+                            <h3 id="MedicalConclusionHeader">Автоматическое заключение</h3>
+                            <div class="Section" id="MedicalConclusion">
+  <div>
+    <span class="Data">Тахикардия </span>
+    <span> с ЧСС </span>
+    <span class="Data">72</span>
+    <span> уд./мин, RR: </span>
+    <span class="Data">801</span>
+    <span> - </span>
+    <span class="Data">859</span>
+    <span></span>
+    <span class="Data">мс</span>
+    <span>.</span>
+  </div>
+  <div>
+    <span>Оценка положения электрической оси сердца: </span>
+    <span class="Data">норма горизонтальное</span>
+    <span>. </span>
+  </div>
+  <div>
+    <span>Сдвиг переходной зоны (</span>
+    <span class="Data">V2-V3</span>
+    <span>) </span>
+    <span class="Data">влево</span>
+    <span>. </span>
+  </div>
+</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="ECGGraph ECGGraphAvgCmpx">
+                        <img src="svg/ECGAvgCmpx.svg" alt="ECG representative complex graph">
+                    </div>
+                </div>
+
+                <div class="PageFooter">
+                    <div class="DoctorSignature">
+                        <span>
+                            <span>Врач:</span>
+                            <span id="Signature">&nbsp;</span>
+                            <span>/</span>
+                            <span id="DoctorName">Алексеев И.П.</span>
+                            <span>/</span>
+                        </span>
+
+                        <span>
+                            <span>Дата:</span>
+                            <span id="AnalysisResultDate">20.12.2017 13:14</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Page Page2">
+                <div class="Page2Header">
+                    <div class="Section" id="Page2HeaderPatientName">
+  <div>
+    <span>Иванов Петр Сидорович [М] 15.05.1960 г.р.</span>
+  </div>
+</div>
+                    <div class="Section" id="Page2HeaderHR">
+  <div>
+    <span>ЧСС 72 ударов в минуту.</span>
+  </div>
+</div>
+                    <div class="Incart_logo_mini">
+                        <a href="https://www.incart.ru">
+                            <img type="image/svg+xml" src="svg/incart_logo.svg" alt="incart logo">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ECGGraph ECGGraphFragm12">
+                    <img src="svg/Fragm12.svg" alt="ECG 12 leads graph">
+                </div>
+                <div class="ECGGraph ECGGraphFragmLong1">
+                    <img src="svg/LongFragm1.svg" alt="ECG 1 lead long graph">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <script type="text/javascript" src="js/scripts.js"></script>
+    </footer>
+</body>
+
+</html>
