@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Ubuntu bold';
+  src: url('../fonts/Ubuntu-Bold.eot');
+  src: url('../fonts/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Ubuntu-Bold.woff2') format('woff2'), url('../fonts/Ubuntu-Bold.woff') format('woff'), url('../fonts/Ubuntu-Bold.ttf') format('truetype'), url('../fonts/Ubuntu-Bold.svg#svgFontName') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu regular';
+  src: url('../fonts/Ubuntu-Regular.eot');
+  src: url('../fonts/Ubuntu-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Ubuntu-Regular.woff2') format('woff2'), url('../fonts/Ubuntu-Regular.woff') format('woff'), url('../fonts/Ubuntu-Regular.ttf') format('truetype'), url('../fonts/Ubuntu-Regular.svg#svgFontName') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Ubuntu regular', sans-serif;
+  font-weight: normal;
+}
+.interview {
+  width: 192rem;
+  height: 74rem;
+  margin: 0 auto;
+  padding: 7.4rem;
+  text-align: center;
+  background: #fafcfe url("../img/background_pattern.png") repeat left top;
+}
+.interview .header {
+  margin-bottom: 2.8rem;
+}
+.interview .header .main-header {
+  font-size: 3.6rem;
+  line-height: 1;
+  margin-bottom: 1.4rem;
+  font-family: 'Ubuntu bold', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0bbaf0;
+}
+.interview .header .sub-header {
+  margin-bottom: 2.2rem;
+  line-height: 1.5rem;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: #0bbaf0;
+}
+.interview .header .hz-line {
+  margin: 0 auto;
+  height: 1px;
+  width: 12rem;
+  border-top: solid 1px #c4c4c4;
+}
+.accordion {
+  margin: 0 auto;
+  width: 86rem;
+}
+.accordion .card {
+  border: none;
+  background-color: transparent;
+  margin-bottom: 4px;
+}
+.accordion .card-header {
+  background-color: #0bbaf0;
+  z-index: 1;
+}
+.accordion .card-header .btn.btn-link {
+  font-size: 2.3rem;
+  line-height: 3.2rem;
+  color: #fff;
+}
+.accordion .card-header .btn.btn-link:hover,
+.accordion .card-header .btn.btn-link:focus {
+  text-decoration: none;
+}
+.accordion .card .collapse.show {
+  margin-bottom: -4px;
+}
+.accordion .card .collapse,
+.accordion .card .collapsing {
+  margin: 0 0.6rem 0;
+  padding: 1rem 5rem 3.7rem 2.8rem;
+  border: solid 4px #dcdcdc;
+  border-top: none;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+  background-color: #fff;
+}
+.accordion .card .collapse .card-body,
+.accordion .card .collapsing .card-body {
+  padding: 0;
+  font-size: 2.2rem;
+  text-align: left;
+}
