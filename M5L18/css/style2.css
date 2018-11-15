@@ -24,15 +24,15 @@ button:focus {
   background-size: cover, cover, auto;
 }
 .login-panel .tab-container {
-  height: 44rem;
+  height: 44.5rem;
 }
 .login-panel .tab-container .nav.nav-tabs {
-  height: 4rem;
-  margin: 0 3rem -1.1px;
+  height: 3.5rem;
+  margin: 0 3rem -1px;
   border: none;
 }
 .login-panel .tab-container .nav.nav-tabs .nav-item .nav-link {
-  height: 4rem;
+  height: 3.5rem;
   margin-right: 1rem;
   border: none;
   border-bottom: solid 1px #047ca0;
@@ -44,6 +44,7 @@ button:focus {
   font-size: 2.4rem;
 }
 .login-panel .tab-container .nav.nav-tabs .nav-item .nav-link.active {
+  height: calc(3.5rem + 0.1px);
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   background: -webkit-gradient(linear, left bottom, left top, from(#03a5db), to(#03a6dc));
@@ -56,7 +57,7 @@ button:focus {
   text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.75);
 }
 .login-panel .tab-container .tab-content {
-  height: calc(44rem - 4rem);
+  height: calc(44.5rem - 3.5rem);
   border-radius: 5px;
   border: solid 1px #047ca0;
   background: -webkit-gradient(linear, left bottom, left top, from(#0494bf), to(#03a5db));
