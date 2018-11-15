@@ -1,0 +1,455 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	text-decoration: none;
+	list-style-type: none;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+.logo
+{
+		background: #819C8B;
+		width: 100%;
+		display: flex;
+		justify-content:center;
+}
+.graphlogo
+{
+	padding: 0.5rem;
+	max-width: 100%;
+	max-height: 150px;
+	box-sizing: border-box;
+}
+
+nav{
+	margin: auto;
+	margin-bottom: 0.5rem;
+}
+.advantages_item a{
+	color: black;
+	
+}
+.advantages_item a:hover{
+	color: #006442;
+	text-decoration: underline;
+}
+
+.topnav{
+	display: flex;
+	justify-content:center;
+	height: 100%;
+	background-color: white;
+	margin-top: 10px;
+}
+.topnav a
+{
+	font-size: 16px;
+	color: #203838;
+	text-align: center;
+	padding: 0px 14px 5px 14px;
+	height: 21px;
+	box-sizing: border-box;
+	text-transform: uppercase;
+}
+.topnav a:hover
+{
+	border-bottom: solid 2px #203838;
+	font-weight: bold;
+}
+.topnav .icon{
+	display: none;
+}
+.mw-100{
+		max-width: 100%;
+		max-height: 256px;
+		display: block;
+		margin:0 auto;
+		padding-bottom: 10px;
+		box-sizing: border-box;
+	}
+.mainImg{
+
+}
+.advantages_container{
+	display:flex;
+	justify-content: center;
+
+}
+.advantages{
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	flex-wrap: wrap;
+	padding-top: 20px;
+}
+
+.advantages_item{
+	width: 30%;
+}
+div.advantages_item img
+{
+	height: 100px;
+}
+
+footer{
+	width: 100%;
+	height: auto;
+	background: #819C8B;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 10px;
+	margin-top: 10px;
+	color: white;
+}
+footer nav a{
+	color: white;
+	font-size: 0.8rem;
+	margin-left: 10px;
+ }
+ footer nav a:hover{
+	border-bottom: 1px solid white;
+ }
+ 
+.social img{
+	margin-left: 10px;
+	margin-bottom: 10px;
+	
+	border-radius: 50%;
+	background: white;
+}
+.social img:hover{
+	background: #A5BA93;
+
+}
+
+.social img.vk_icon{
+	background: #203838;
+}
+.social img.vk_icon:hover{
+	background: #597DA3;
+}
+body{
+	position: relative;
+}
+
+footer p{
+	color: white;
+}
+
+.gallery{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 25px;
+}
+.gallery .photo_item{
+	width: 25%;
+	box-sizing: border-box;
+}
+.gallery .photo_item img{
+	max-width: 100%;
+	box-sizing: border-box;
+	padding-left: 5px;
+	padding-right: 5px;
+	opacity: 0.7
+	
+}
+.gallery .photo_item img:hover{
+	opacity: 1;
+}
+
+
+
+
+.blog_container{
+	background: #FAFAFA;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,0.2) 0 4px 2px  2px;
+	font-weight: 100;
+	margin: 24px auto;
+	width: 50rem;
+}
+
+.blog_container a:hover{
+	border-color: #ff4d4d;
+	color: #ff4d4d;
+}
+.blog_cover{
+	background: url(../img/nature.jpg);
+	background-size: cover;
+
+	border-radius: 5px 5px 0 0;
+	height: 15rem;
+	box-shadow: inset rgba(0,0,0,0.2) 0 64px 64px 16px;
+}
+
+.blog_body{
+	margin: 0 auto;
+	width: 80%;
+}
+.blog_title h1 a{
+	color:#333;
+	font-weight: 100;
+}
+.blog_text p{
+color: #4d4d4d;
+}
+
+.blog_tags ul{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	list-style: none;
+	padding-left: 0; 
+}
+
+.blog_tags li + li{
+	margin-left: 0.5rem;
+}
+.blog_tags li a
+{
+	border: 1px solid #999999;
+	border-radius: 3px;
+	font-size: 0.75rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	letter-spacing: 1px;
+	padding: 0 0.5rem;
+	text-align: center;
+	text-transform: uppercase;
+	white-space: nowrap;
+	width: 5rem;
+
+}
+
+.blog_footer{
+	border-top: 1px solid #e6e6e6;
+	margin: 0 auto;
+	padding-bottom: 0.125rem;
+	width: 80%;
+}
+
+.blog_footer ul{
+	list-style: none;
+	display: flex;
+	flex: row wrap;
+	justify-content: flex-end;
+	padding-left: 0px;
+
+}
+
+.blog_footer ul li{
+	color: #999999;
+	font-size: 0.75rem;
+	height: 1.5rem;
+	text-align: center;
+	text-transform:uppercase;
+	position: relative;
+	white-space: nowrap;
+}
+.published_date{
+	border: 1px solid #999999;
+	border-radius: 3px;
+	padding: 0 0.5rem;
+}
+
+#map{
+	width: 95%;
+	height: 400px;
+	margin: 10px auto;
+}
+
+
+.form{
+	width: 50%;
+	margin: 50px auto;
+}
+.feedback_input{
+	color: #000;
+	font-weight: 14px;
+	line-height: 22px;
+	background-color: #fff;
+	padding: 13px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	border:0px solid transparent;
+	border-bottom: 1px solid #000;
+}
+textarea{
+	width: 100%;
+	height: 150px;
+	resize: vertical;
+}
+.btn_submit{
+	display: block;
+	width: 100%;
+	border: 1px solid transparent;
+	cursor: pointer;
+	background-color: #203838;
+	color: white;
+	font-size: 18px;
+	padding-top: 22px;
+	padding-bottom: 22px;
+
+	transition: all 0.3s;
+	margin-top: 0px;
+	font-weight: 300;
+}
+
+.btn_submit:hover{
+	background-color: #FFF;
+	color: #203838;
+	border: 1px solid #203838;
+
+}
+.easy{
+	width: 0;
+	height: 74px;
+	background-color: #fbfbfb;
+}
+
+.about_container{
+	width: 80%;
+	margin: 25px auto;
+	text-align: center;
+}
+.about_container img{
+	max-width: 100%;
+	
+}
+.about_container p{
+	margin-top: 50px;
+}
+.about_container h1{
+	margin-top: 35px;
+}
+
+
+.services{
+	width: 80%;
+	margin: 25px auto;
+	text-align: center;
+}
+
+.services img {
+	max-width: 100%;
+}
+.services_container{
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 50px 100px;
+}
+
+@media screen and (max-width: 768px) {
+	.gallery{
+		justify-content: space-between;
+	}
+	.gallery .photo_item{
+		width: 50%;
+	}
+	.topnav {
+		display: block;
+	}
+	.advantages_item
+	{
+		width: 50%;
+	}
+	.topnav a:not(:first-child)
+	{
+		display: none;
+	}
+	
+	.topnav a.icon{
+		float: right;
+		display: block;
+		border: none;
+	}
+	nav
+	{
+		width: 100%;
+		height: 100%;
+	}
+
+	.topnav
+	{
+		position: relative;
+	}
+	
+	.topnav a.icon{
+		position: absolute;
+		margin-bottom: 0.2rem;
+
+		right: 0;
+		top: 0;
+		
+	}
+
+.topnav a:not(.icon):first-child{
+	display: block;
+
+	}
+	.topnav a:not(.icon){
+		height: auto;
+		text-align: left;
+		height: 2rem;
+		margin: 0.2rem  2.2rem 0.2rem 1rem;
+		width: 8rem;
+		box-sizing: border-box;
+	}
+
+	.topnav.responsive a:not(.icon){
+		display: block;
+	}
+
+	.blog_container
+	{
+		width: 90%;
+	}
+.services_container{
+	grid-template-columns: auto;
+}
+}
+
+@media screen and (max-width: 480px) 
+{
+	.advantages{
+		flex-direction: column;
+	}
+	.advantages_item{
+		width: 100%;
+	}
+	
+
+	.project{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.gallery{
+		width: auto;
+		margin:auto;
+	}
+	.gallery .photo_item{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.blog_container
+	{
+		width: 90%;
+	}
+	
+}
