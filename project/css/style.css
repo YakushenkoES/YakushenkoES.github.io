@@ -128,7 +128,7 @@ section.features .feature-img-box img {
   font-size: 1.8rem;
   text-align: center;
   background-color: #70c849;
-  color: #fcfcfc;
+  color: #ffffff;
 }
 .main span.min-price strong {
   font-family: "Proxima Nova bold", sans-serif;
@@ -285,6 +285,7 @@ section.features .feature-img-box img {
 }
 body.popup-opened {
   overflow: hidden;
+  position: fixed;
 }
 @media (max-width: 991.98px) {
   .popup-window {
@@ -359,6 +360,96 @@ body.popup-opened {
   font-size: 1.6rem;
   height: 6.5rem;
 }
+.price {
+  background: #358015 url('../img/price/bg-price.png') repeat;
+}
+.price-title {
+  margin-bottom: 3.5rem;
+  font-family: "Proxima Nova bold", sans-serif;
+  font-size: 1.9rem;
+  line-height: 1.053;
+}
+.price-button-wrap {
+  text-align: right;
+}
+.price-button-wrap .price-button-header {
+  width: 34rem;
+}
+.price-block {
+  height: 100%;
+  padding: 3rem;
+  color: #1a1820;
+  background-color: #ffffff;
+  text-align: center;
+}
+.price-block img {
+  max-width: 100%;
+  margin-bottom: 3.5rem;
+}
+.price-tag {
+  margin-bottom: 3.5rem;
+  font-family: "Proxima Nova bold", sans-serif;
+  font-size: 3rem;
+  line-height: 1.053;
+}
+.price-list {
+  margin-bottom: 2.5rem;
+  min-height: 15rem;
+  padding-left: 0;
+  font-size: 1.8rem;
+  line-height: 1.667;
+}
+.price-list-link {
+  display: none;
+  color: #006b00;
+  font-size: 1.8rem;
+  text-decoration: underline;
+}
+.price-list-link:hover {
+  color: #009e00;
+}
+.price-list li {
+  list-style-type: none;
+}
+.price-list li::before {
+  content: '';
+  display: inline-block;
+  margin-right: 1rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url('../img/price/check.svg') center center no-repeat;
+  background-size: 100%;
+}
+.price-button.button {
+  width: 20rem;
+  font-size: 1.8rem;
+  height: 6.5rem;
+}
+@media (max-width: 1199.98px) {
+  .price-button-wrap {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .price-button-wrap .price-button-header {
+    width: 100%;
+  }
+}
+@media (max-width: 991.98px) {
+  .price-block {
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  .price-tag {
+    margin-bottom: 2rem;
+  }
+  .price-list {
+    display: none;
+  }
+  .price-list-link {
+    display: block;
+    margin-bottom: 3rem;
+  }
+}
 html {
   font-size: 10px;
 }
@@ -402,14 +493,32 @@ a:hover {
 section {
   text-align: center;
   padding-top: 10rem;
+  padding-bottom: 12rem;
 }
-section .section-header {
+section .section-header-light {
+  color: #ffffff;
+}
+section .section-header-title {
   font-size: 3.6rem;
   font-family: "Proxima Nova bold", sans-serif;
+}
+section .section-header-subtitle {
+  margin-top: 5rem;
+  margin-bottom: 9rem;
+  font-size: 1.8rem;
 }
 @media (max-width: 991.98px) {
   section {
     padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+  section .section-header-title {
+    font-size: 2.4rem;
+  }
+  section .section-header-subtitle {
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
   }
 }
 
