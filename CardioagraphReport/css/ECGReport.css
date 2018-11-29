@@ -1,236 +1,1109 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Font-Awesome";
-  src: url("../fonts/fa-regular-400.woff"); }
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
 
-.Page1 .Page1Header .Incart_logo img {
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+.page1 .page1-header .organization, .page1 .page1-header .incart_logo img {
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+}
 
-div[contenteditable="true"]:focus, .Page {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+div[contenteditable="true"]:focus, .page {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 /*span.Data + span{
     margin-left: -4px;
 }*/
+@font-face {
+  font-family: "ecg-report";
+  src: url("../fonts/ecg-report.eot");
+  src: url("../fonts/ecg-report.eot?#iefix") format("embedded-opentype"), url("../fonts/ecg-report.woff2") format("woff2"), url("../fonts/ecg-report.woff") format("woff"), url("../fonts/ecg-report.ttf") format("truetype"), url("../fonts/ecg-report.svg#svgFontName") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 h3 {
   text-align: center;
-  margin-bottom: 2mm; }
+  margin-bottom: 2mm;
+}
 
 address {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 #PreviewArea {
-  font-family: Arial, sans-serif; }
-
-.ECGGraph {
-  margin: 0 auto;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box; }
-  .ECGGraph img {
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
-    margin: 0 auto; }
+  font-family: Arial, sans-serif;
+}
 
 div[contenteditable="true"] {
-  position: relative; }
-  div[contenteditable="true"]:focus {
-    outline: none;
-    border: 0.5px solid #3d64ae;
-    border-radius: 3px;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
-    padding: 2px; }
-    div[contenteditable="true"]:focus:before {
-      font-family: "Font-Awesome";
-      font-size: 1.5em;
-      content: "\f044";
-      display: inline-block;
-      color: #3d64ae;
-      line-height: 1;
-      position: absolute;
-      top: -0.5em;
-      right: -0.5em;
-      background-color: white; }
+  position: relative;
+}
 
-.Page {
+div[contenteditable="true"]:focus {
+  outline: none;
+  border: 0.5px solid #3d64ae;
+  border-radius: 3px;
+  box-sizing: content-box;
+  padding: 2px;
+}
+
+div[contenteditable="true"]:focus:before {
+  font-family: "ecg-report";
+  content: "\e800";
+  font-size: 1.5em;
+  display: inline-block;
+  color: #3d64ae;
+  line-height: 1;
+  position: absolute;
+  top: -0.5em;
+  right: -0.5em;
+  background-color: white;
+}
+
+.page {
   margin: 5mm auto 10mm auto;
   border: 1px solid #FFF;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 1cm;
   height: 297mm;
   width: 210mm;
   background-color: white;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 @media screen and (max-width: 800px) {
   main {
-    border: none; }
-  .Page {
+    border: none;
+  }
+  .page {
     min-width: 360px;
     margin: 10px auto 20px auto;
     padding: 20px 0px;
     height: 100%;
     width: 90%;
-    overflow: initial; }
-  .ECGGraph img {
-    width: 100%; } }
+    overflow: initial;
+  }
+}
 
-.Page1 {
+.page1 {
   display: grid;
   grid-template-rows: 18mm auto 10mm;
   grid-template-columns: 105mm 85mm;
-  grid-template-areas: "Pg1Header Pg1Header" "Pg1Left Pg1Right" "Pg1Footer Pg1Footer"; }
-  .Page1 .Page1Header {
-    position: relative;
-    grid-area: Pg1Header; }
-    .Page1 .Page1Header .Organization {
-      margin: 0 auto;
-      text-align: center;
-      max-width: 120mm;
-      height: 22mm;
-      overflow: visible; }
-    .Page1 .Page1Header .Incart_logo {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 18mm;
-      height: 18mm; }
-      .Page1 .Page1Header .Incart_logo img {
-        width: 100%; }
-  .Page1 .Page1Header, .Page1 .left, .Page1 .right {
-    margin-bottom: 2mm; }
-  .Page1 .left {
-    grid-area: Pg1Left; }
-  .Page1 .right {
-    grid-area: Pg1Right; }
-  .Page1 .MedicalReport {
-    font-size: 14px;
-    /*overflow: hidden;*/ }
-    .Page1 .MedicalReport .Section {
-      margin-top: 10px; }
-    .Page1 .MedicalReport span.Data {
-      font-weight: bold; }
-  .Page1 #PatientData {
-    overflow: visible; }
-  .Page1 .PageFooter {
-    grid-area: Pg1Footer; }
-    .Page1 .PageFooter .DoctorSignature {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-      .Page1 .PageFooter .DoctorSignature #Signature {
-        width: 40mm;
-        display: inline-block;
-        border-bottom: 1px solid black;
-        height: 1.5em;
-        line-height: 1.5em;
-        text-align: center;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box; }
-      .Page1 .PageFooter .DoctorSignature #DoctorName {
-        display: inline-block; }
-  .Page1 .ECGGraphAvgCmpx {
-    width: calc(81mm + 1mm);
-    /*Пока не выяснил, почему для точной печати нужен 1 лишний мм*/ }
-  .Page1 .ECGGraphRadial {
-    width: 80mm; }
+  grid-template-areas: "Pg1Header Pg1Header" "Pg1Left Pg1Right" "Pg1Footer Pg1Footer";
+}
+
+.page1 .page1-header {
+  position: relative;
+  grid-area: Pg1Header;
+}
+
+.page1 .page1-header .organization {
+  max-width: 120mm;
+  text-align: center;
+  overflow: visible;
+}
+
+.page1 .page1-header .organization .header-data-title {
+  font-weight: bold;
+}
+
+.page1 .page1-header .organization-phone-block {
+  display: inline-block;
+  margin-right: 1ch;
+}
+
+.page1 .page1-header .incart_logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 18mm;
+  height: 18mm;
+}
+
+.page1 .page1-header .incart_logo img {
+  width: 100%;
+}
+
+.page1 .left {
+  grid-area: Pg1Left;
+}
+
+.page1 .right {
+  grid-area: Pg1Right;
+}
+
+.page1 .MedicalReport {
+  font-size: 14px;
+}
+
+.page1 .MedicalReport .Section {
+  margin-top: 3mm;
+  margin-bottom: 7mm;
+}
+
+.page1 .MedicalReport span.Data {
+  font-weight: bold;
+}
+
+.page1 .pageFooter {
+  grid-area: Pg1Footer;
+}
+
+.page1 .pageFooter .DoctorSignature {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.page1 .pageFooter .DoctorSignature #Signature {
+  width: 40mm;
+  display: inline-block;
+  border-bottom: 1px solid black;
+  height: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.page1 .pageFooter .DoctorSignature #DoctorName {
+  display: inline-block;
+}
+
+.page1 .ECGGraphAvgCmpx {
+  width: calc(81mm + 1mm);
+  /*Пока не выяснил, почему для точной печати нужен 1 лишний мм*/
+}
+
+.page1 .ECGGraphRadial {
+  width: 80mm;
+}
 
 @media screen and (max-width: 800px) {
-  .Page1 {
-    grid-row-gap: 10px;
+  .page1 {
     grid-template-rows: none;
     grid-template-columns: 1fr;
-    grid-template-areas: "Pg1Header" "Pg1Left" "Pg1Right" "Pg1Footer"; }
-    .Page1 > *, .Page1 .ECGGraph {
-      margin-left: auto;
-      margin-right: auto;
-      width: 90%; }
-    .Page1 .Page1Header {
-      height: auto;
-      margin-top: 10px; }
-      .Page1 .Page1Header .Organization {
-        text-align: center;
-        height: auto;
-        overflow: none; }
-      .Page1 .Page1Header .Incart_logo {
-        position: static;
-        margin: 0 auto;
-        width: 90px;
-        height: auto; }
-    .Page1 .MedicalReport {
-      font-size: 16px;
-      /*overflow: initial;*/ }
-    .Page1 .Section {
-      margin-top: 10px; }
-    .Page1 .PageFooter .DoctorSignature span {
-      -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-      flex-grow: 1;
-      line-height: 2em; }
-    .Page1 .ECGGraphRadial {
-      max-width: 400px; } }
-
-.Page2 {
-  display: grid;
-  grid-template-rows: 12mm auto auto;
-  grid-template-columns: 1fr; }
-  .Page2 .ECGGraph {
-    width: calc(180mm + 1mm);
-    /*Пока не выяснил, почему для точной печати нужен 1 лишний мм*/ }
-  .Page2 .Page2Header {
-    position: relative;
-    margin-bottom: 1mm; }
-  .Page2 .Incart_logo_mini {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 12mm;
-    height: 12mm; }
-    .Page2 .Incart_logo_mini img {
-      width: 100%; }
-
-#Page2HeaderPatientName {
-  font-weight: bold; }
-
-@media screen and (max-width: 800px) {
-  .Page2 > *, .Page2 .ECGGraph {
+    grid-template-areas: "Pg1Header" "Pg1Left" "Pg1Right" "Pg1Footer";
+  }
+  .page1 > *, .page1 .ECGGraph {
     margin-left: auto;
     margin-right: auto;
-    width: 90%; }
-  .Page2 .Incart_logo_mini {
-    display: none; } }
+    width: 90%;
+  }
+  .page1 .page1-header {
+    height: auto;
+    margin-top: 15px;
+  }
+  .page1 .page1-header .organization {
+    text-align: center;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+  .page1 .page1-header .organization-phone-block {
+    display: block;
+    margin: initial;
+  }
+  .page1 .page1-header .incart_logo {
+    position: static;
+    margin: 0 auto;
+    width: 90px;
+    height: auto;
+  }
+  .page1 .MedicalReport {
+    font-size: 16px;
+  }
+  .page1 .Section {
+    margin-top: 10px;
+  }
+  .page1 .pageFooter .DoctorSignature span {
+    flex-grow: 1;
+    line-height: 2em;
+  }
+  .page1 .pageFooter .DoctorSignature span #Signature {
+    display: none;
+  }
+  .page1 .ECGGraphRadial {
+    max-width: 400px;
+  }
+}
+
+.page2 {
+  display: grid;
+  grid-template-rows: 12mm auto auto;
+  grid-template-columns: 1fr;
+}
+
+.page2 .ECGGraph {
+  width: calc(180mm + 1mm);
+  /*Пока не выяснил, почему для точной печати нужен 1 лишний мм*/
+}
+
+.page2 .page2Header {
+  position: relative;
+  margin-bottom: 1mm;
+}
+
+.page2 .incart_logo_mini {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12mm;
+  height: 12mm;
+}
+
+.page2 .incart_logo_mini img {
+  width: 100%;
+}
+
+#page2HeaderPatientName {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .page2 {
+    grid-template-rows: auto auto auto;
+  }
+  .page2 > *, .page2 .ECGGraph {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  .page2 .page2Header {
+    display: none;
+  }
+}
+
+.prm-table {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 4mm;
+}
+
+.prm-table__merged {
+  margin-bottom: 0;
+}
+
+.prm-table .td-gr-col {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.prm-table-patient-FIO .td-gr-col {
+  flex-wrap: nowrap;
+}
+
+.prm-table-patient-FIO .FIO {
+  text-transform: uppercase;
+}
+
+.prm-table-patient-FIO .td-gr-col:nth-child(1) {
+  margin-right: 0;
+}
+
+.prm-table-patient-FIO .td-gr-col:nth-child(1) .td-col:nth-child(1) {
+  min-width: 12mm;
+}
+
+.prm-table-patient-FIO .td-gr-col:nth-child(1) .td-col:nth-child(2) {
+  min-width: auto;
+}
+
+.prm-table-patient-birth .td-gr-col:nth-child(1) {
+  margin-right: 6mm;
+}
+
+.prm-table-patient-birth .td-gr-col:nth-child(1) .td-col:nth-child(1) {
+  min-width: 32mm;
+}
+
+.prm-table-patient-birth .td-gr-col:nth-child(1) .td-col:nth-child(2) {
+  min-width: 20mm;
+}
+
+.prm-table-patient-birth .td-gr-col:nth-child(2) {
+  margin-right: 0;
+}
+
+.prm-table-patient-birth .td-gr-col:nth-child(2) .td-col:nth-child(1) {
+  min-width: 16mm;
+}
+
+.prm-table-patient-birth .td-gr-col:nth-child(2) .td-col:nth-child(2) {
+  min-width: 6mm;
+}
+
+.prm-table-exam-no {
+  margin-bottom: 0mm;
+}
+
+.prm-table-exam-no .td-gr-col:nth-child(1) {
+  margin-right: 0;
+}
+
+.prm-table-exam-no .td-gr-col:nth-child(1) .td-col:nth-child(1) {
+  min-width: 34mm;
+}
+
+.prm-table-exam-no .td-gr-col:nth-child(1) .td-col:nth-child(2) {
+  min-width: 10mm;
+}
+
+.prm-table-exam-date {
+  margin-bottom: 2mm;
+}
+
+.prm-table-exam-date .td-gr-col:nth-child(1) {
+  margin-right: 7mm;
+}
+
+.prm-table-exam-date .td-gr-col:nth-child(1) .td-col:nth-child(1) {
+  min-width: 22mm;
+}
+
+.prm-table-exam-date .td-gr-col:nth-child(1) .td-col:nth-child(2) {
+  min-width: 19mm;
+}
+
+.prm-table-exam-date .td-gr-col:nth-child(2) {
+  margin-right: 0;
+}
+
+.prm-table-exam-date .td-gr-col:nth-child(2) .td-col:nth-child(1) {
+  min-width: 14mm;
+}
+
+.prm-table-exam-date .td-gr-col:nth-child(2) .td-col:nth-child(2) {
+  min-width: 10mm;
+}
+
+.prm-table-exam-aim .td-gr-col {
+  flex-wrap: nowrap;
+}
+
+.prm-table-exam-aim .prm-data {
+  text-align: left;
+}
+
+.prm-table-exam-aim .td-gr-col:nth-child(1) {
+  margin-right: 0;
+}
+
+.prm-table-exam-aim .td-gr-col:nth-child(1) .td-col:nth-child(1) {
+  min-width: 25mm;
+}
+
+.prm-table-exam-aim .td-gr-col:nth-child(1) .td-col:nth-child(2) {
+  min-width: 10mm;
+}
+
+.prm-table-HR {
+  margin-bottom: 1mm;
+}
+
+.prm-table-HR .td-gr-col:nth-child(1) {
+  margin-right: 7mm;
+}
+
+.prm-table-HR .td-gr-col:nth-child(1) .td-col:nth-child(1) {
+  min-width: 10mm;
+}
+
+.prm-table-HR .td-gr-col:nth-child(1) .td-col:nth-child(2) {
+  min-width: 7mm;
+}
+
+.prm-table-HR .td-gr-col:nth-child(1) .td-col:nth-child(3) {
+  min-width: 16mm;
+}
+
+.prm-table-HR .td-gr-col:nth-child(2) {
+  margin-right: 0;
+}
+
+.prm-table-HR .td-gr-col:nth-child(2) .td-col:nth-child(1) {
+  min-width: 8mm;
+}
+
+.prm-table-HR .td-gr-col:nth-child(2) .td-col:nth-child(2) {
+  min-width: 9mm;
+}
+
+.prm-table-HR .td-gr-col:nth-child(2) .td-col:nth-child(3) {
+  min-width: 3mm;
+}
+
+.prm-table-HR .td-gr-col:nth-child(2) .td-col:nth-child(4) {
+  min-width: 9mm;
+}
+
+.prm-table-HR .td-gr-col:nth-child(2) .td-col:nth-child(5) {
+  min-width: 5mm;
+}
+
+.prm-table-Intervals .td-gr-col:nth-child(1) {
+  margin-right: 7mm;
+}
+
+.prm-table-Intervals .td-gr-col:nth-child(1) .td-col:nth-child(1) {
+  min-width: 10mm;
+}
+
+.prm-table-Intervals .td-gr-col:nth-child(1) .td-col:nth-child(2) {
+  min-width: 7mm;
+}
+
+.prm-table-Intervals .td-gr-col:nth-child(1) .td-col:nth-child(3) {
+  min-width: 7mm;
+}
+
+.prm-table-Intervals .td-gr-col:nth-child(2) {
+  margin-right: 7mm;
+}
+
+.prm-table-Intervals .td-gr-col:nth-child(2) .td-col:nth-child(1) {
+  min-width: 10mm;
+}
+
+.prm-table-Intervals .td-gr-col:nth-child(2) .td-col:nth-child(2) {
+  min-width: 8mm;
+}
+
+.prm-table-Intervals .td-gr-col:nth-child(2) .td-col:nth-child(3) {
+  min-width: 7mm;
+}
+
+.prm-table-Intervals .td-gr-col:nth-child(3) {
+  margin-right: 0;
+}
+
+.prm-table-Intervals .td-gr-col:nth-child(3) .td-col:nth-child(1) {
+  min-width: 10mm;
+}
+
+.prm-table-Intervals .td-gr-col:nth-child(3) .td-col:nth-child(2) {
+  min-width: 7mm;
+}
+
+@media screen and (max-width: 800px) {
+  .prm-table-Intervals .td-gr-col:nth-child(1) {
+    margin-right: 6mm;
+  }
+  .prm-table-Intervals .td-gr-col:nth-child(2) {
+    margin-right: 6mm;
+  }
+  .prm-table-Intervals .td-gr-col:nth-child(3) {
+    margin-right: 0;
+  }
+}
+
+.prm-table-ST .td-gr-col {
+  margin-bottom: 1mm;
+}
+
+.prm-table-ST .td-gr-col:nth-child(1) {
+  margin-right: 5mm;
+}
+
+.prm-table-ST .td-gr-col:nth-child(1) .td-col:nth-child(1) {
+  min-width: 22mm;
+}
+
+.prm-table-ST .td-gr-col:nth-child(1) .td-col:nth-child(2) {
+  min-width: 9mm;
+}
+
+.prm-table-ST .td-gr-col:nth-child(1) .td-col:nth-child(3) {
+  min-width: 7mm;
+}
+
+.prm-table-ST .td-gr-col:nth-child(2) {
+  margin-right: 0;
+}
+
+.prm-table-ST .td-gr-col:nth-child(2) .td-col:nth-child(1) {
+  min-width: 43mm;
+}
+
+.prm-table-ST .td-gr-col:nth-child(2) .td-col:nth-child(2) {
+  min-width: 13mm;
+}
+
+.prm-title {
+  font-weight: bold;
+  text-align-last: left;
+}
+
+.prm-title-invert {
+  font-weight: normal;
+}
+
+.prm-data {
+  text-align: right;
+}
+
+.prm-data-invert {
+  font-weight: bold;
+}
+
+.prm-data-range {
+  text-align: center;
+}
+
+.prm-single-symbol {
+  text-align: center;
+}
+
+.prm-units {
+  text-align: left;
+  padding-left: 1mm;
+}
+
+:-webkit-full-screen {
+  background-color: white;
+}
+
+:-moz-full-screen {
+  background-color: white;
+}
+
+:-ms-fullscreen {
+  background-color: white;
+}
+
+:fullscreen {
+  background-color: white;
+}
+
+.ECGGraph {
+  position: relative;
+  margin: 0 auto;
+}
+
+.ECGGraph object {
+  box-sizing: content-box;
+  margin: 0 auto;
+}
+
+.ECGGraph:-webkit-full-screen {
+  padding: 45px;
+  text-align: center;
+  overflow: auto;
+}
+
+.ECGGraph:-moz-full-screen {
+  padding: 45px;
+  text-align: center;
+  overflow: auto;
+}
+
+.ECGGraph:-ms-fullscreen {
+  padding: 45px;
+  text-align: center;
+  overflow: auto;
+}
+
+.ECGGraph:fullscreen {
+  padding: 45px;
+  text-align: center;
+  overflow: auto;
+}
+
+.ECGGraph:-webkit-full-screen object {
+  min-width: 180mm;
+}
+
+.ECGGraph:-moz-full-screen object {
+  min-width: 180mm;
+}
+
+.ECGGraph:-ms-fullscreen object {
+  min-width: 180mm;
+}
+
+.ECGGraph:fullscreen object {
+  min-width: 180mm;
+}
+
+.ECGGraph:-webkit-full-screen .btn-screen {
+  opacity: 1;
+  position: fixed;
+  top: 15px;
+  right: 45px;
+  color: #333333;
+}
+
+.ECGGraph:-moz-full-screen .btn-screen {
+  opacity: 1;
+  position: fixed;
+  top: 15px;
+  right: 45px;
+  color: #333333;
+}
+
+.ECGGraph:-ms-fullscreen .btn-screen {
+  opacity: 1;
+  position: fixed;
+  top: 15px;
+  right: 45px;
+  color: #333333;
+}
+
+.ECGGraph:fullscreen .btn-screen {
+  opacity: 1;
+  position: fixed;
+  top: 15px;
+  right: 45px;
+  color: #333333;
+}
+
+.ECGGraph:-webkit-full-screen .btn-screen:before {
+  content: "\e801";
+  font-size: 30px;
+  text-shadow: none;
+}
+
+.ECGGraph:-moz-full-screen .btn-screen:before {
+  content: "\e801";
+  font-size: 30px;
+  text-shadow: none;
+}
+
+.ECGGraph:-ms-fullscreen .btn-screen:before {
+  content: "\e801";
+  font-size: 30px;
+  text-shadow: none;
+}
+
+.ECGGraph:fullscreen .btn-screen:before {
+  content: "\e801";
+  font-size: 30px;
+  text-shadow: none;
+}
+
+.ECGGraph:-webkit-full-screen .btn-screen:hover:before {
+  cursor: -webkit-zoom-out;
+}
+
+.ECGGraph:-moz-full-screen .btn-screen:hover:before {
+  cursor: -webkit-zoom-out;
+}
+
+.ECGGraph:-ms-fullscreen .btn-screen:hover:before {
+  cursor: -webkit-zoom-out;
+}
+
+.ECGGraph:fullscreen .btn-screen:hover:before {
+  cursor: -webkit-zoom-out;
+}
+
+.ECGGraph:hover .btn-screen {
+  opacity: 1;
+}
+
+.ECGGraph .btn-screen {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out 0s;
+  outline: none;
+  border: none;
+  color: white;
+}
+
+.ECGGraph .btn-screen:before {
+  content: "\e802";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  line-height: 30px;
+  width: 30px;
+  text-align: center;
+  font-family: "ecg-report";
+  font-size: 20px;
+  text-shadow: 0px 0px 10px black;
+}
+
+.ECGGraph .btn-screen:hover:before {
+  cursor: -webkit-zoom-in;
+  text-shadow: 0px 0px 10px #3d64ae;
+}
+
+@media screen and (max-width: 800px) {
+  .ECGGraph object {
+    width: 100%;
+  }
+}
 
 @media print {
   main {
     background: none;
-    border: none; }
+    border: none;
+  }
   body * {
-    visibility: hidden; }
-  #PreviewArea, #PreviewArea * {
-    visibility: visible; }
+    visibility: hidden;
+  }
+  #PreviewArea,
+  #PreviewArea * {
+    visibility: visible;
+  }
   #PreviewArea {
     position: absolute;
     left: 0;
-    top: 0; }
-  .Page {
+    top: 0;
+  }
+  .page {
     margin: 0;
     border: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    box-shadow: none;
+  }
   @page {
     margin: 0cm;
-    size: a4 portrait; } }
+    size: a4 portrait;
+  }
+}
