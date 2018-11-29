@@ -29,4 +29,4 @@ My test work
 
 [M5L18 Табы и аккордеоны](https://YakushenkoES.github.io/M5L18/Index.html "Аккордеон") - Аккордеон
 
-[M5L18 Табы и аккордеоны](https://YakushenkoES.github.io/M5L18/Index2.html "Табы") - Табы
+[M5L18 Табы и аккордеоны](https://YakushenkoES.github.io/M5L18/Index2.html "Табы") - Табы (черная форма)
