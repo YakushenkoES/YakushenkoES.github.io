@@ -22,6 +22,28 @@
 section.features .feature-slider {
   margin-top: 5.6rem;
 }
+section.features .feature-slider .slick-slide {
+  outline: none;
+}
+section.features .feature-slider .slick-btn {
+  display: block;
+  width: 2rem;
+  height: 100%;
+  z-index: 99;
+}
+section.features .feature-slider .slick-btn::before {
+  content: "";
+}
+section.features .feature-slider .slick-btn.slick-prev {
+  left: 0;
+  background: url('../img/slider/prev.svg') center no-repeat;
+  background-size: 80%;
+}
+section.features .feature-slider .slick-btn.slick-next {
+  right: 0;
+  background: url('../img/slider/next.svg') center no-repeat;
+  background-size: 80%;
+}
 section.features .feature-block {
   padding-right: 1rem;
   padding-left: 1rem;
@@ -52,28 +74,6 @@ section.features .feature-img-box img {
     width: calc(100% - 3rem);
     left: 1.5rem;
   }
-}
-.slick-slider .slick-slide {
-  outline: none;
-}
-.slick-slider .slick-btn {
-  display: block;
-  width: 2rem;
-  height: 100%;
-  z-index: 99;
-}
-.slick-slider .slick-btn::before {
-  content: "";
-}
-.slick-slider .slick-btn.slick-prev {
-  left: 0;
-  background: url('../img/slider/prev.svg') center no-repeat;
-  background-size: 80%;
-}
-.slick-slider .slick-btn.slick-next {
-  right: 0;
-  background: url('../img/slider/next.svg') center no-repeat;
-  background-size: 80%;
 }
 .header {
   margin-top: 1rem;
@@ -127,7 +127,7 @@ section.features .feature-img-box img {
   margin-bottom: 4rem;
   font-size: 1.8rem;
   text-align: center;
-  background-color: #70c849;
+  background-color: #49be15;
   color: #ffffff;
 }
 .main span.min-price strong {
@@ -449,6 +449,109 @@ body.popup-opened {
     display: block;
     margin-bottom: 3rem;
   }
+}
+section.feedback {
+  background: #ededed url('../img/feedback/bg-feedback.png') top left repeat;
+  color: #1a1820;
+}
+section.feedback .feedback-object {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+}
+section.feedback .feedback-object strong {
+  font-family: "Proxima Nova bold", sans-serif;
+}
+section.feedback .feedback-customer {
+  text-align: left;
+}
+section.feedback .feedback-customer-photo,
+section.feedback .feedback-customer-info {
+  display: inline-block;
+  vertical-align: middle;
+}
+section.feedback .feedback-customer-info h4 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+section.feedback .feedback-customer-photo {
+  margin-right: 2rem;
+}
+section.feedback .feedback-customer-photo img {
+  border-radius: 50%;
+}
+section.feedback .feedback-customer-name {
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: "Proxima Nova bold", sans-serif;
+}
+section.feedback .feedback-text {
+  position: relative;
+  margin-top: 2rem;
+  padding: 2.5rem;
+  border: solid 2px #49be15;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+section.feedback .feedback-text::before {
+  content: '';
+  z-index: 0;
+  position: absolute;
+  top: calc(-1.5rem - 1px);
+  left: 4rem;
+  width: 2rem;
+  height: 1.5rem;
+  background-color: #fff;
+  -webkit-transform: skewX(20deg) skewY(35deg) translateX(1.5px) translateY(2px);
+  -ms-transform: skewX(20deg) skewY(35deg) translateX(1.5px) translateY(2px);
+  transform: skewX(20deg) skewY(35deg) translateX(1.5px) translateY(2px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+section.feedback .feedback-text .speech {
+  z-index: -1;
+  position: absolute;
+  top: calc(-1.5rem - 1px);
+  left: 4rem;
+  width: 2rem;
+  height: 1.5rem;
+  background-color: #49be15;
+  -webkit-transform: skewX(20deg) skewY(35deg);
+  -ms-transform: skewX(20deg) skewY(35deg);
+  transform: skewX(20deg) skewY(35deg);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+section.feedback .feedback-slider {
+  position: relative;
+  margin: 10rem 5rem 0 5rem;
+  padding: 3rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+}
+section.feedback .feedback-slider .slick-slide {
+  outline: none;
+}
+section.feedback .feedback-slider .slick-btn {
+  position: absolute;
+  width: 5rem;
+  height: 6rem;
+}
+section.feedback .feedback-slider .slick-btn::before {
+  content: "";
+}
+section.feedback .feedback-slider .slick-btn.slick-prev {
+  left: -5rem;
+  background: #49be15 url('../img/feedback/Prev.svg') center no-repeat;
+  background-size: 1.3rem;
+}
+section.feedback .feedback-slider .slick-btn.slick-next {
+  right: -5rem;
+  background: #49be15 url('../img/feedback/Next.svg') center no-repeat;
+  background-size: 1.3rem;
 }
 html {
   font-size: 10px;
