@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,33 @@
 
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <div class="section" data-vide-bg="mp4: video/ocean.mp4, webm:  video/ocean.webm, ogv: video/ocean.ogv, poster: video/ocean.jpg" data-vide-options="posterType:jpg, loop: true, muted: false, position: 0% 0%, autoplay: true">
-    <div class="content" >
-      <h1>Test video background</h1>
+  <div class="section">
+    <video autoplay muted loop>
+      <source src="video/Raindrops.jpg">
+      <source src="video/Raindrops.mp4">
+      <source src="video/Raindrops.ogv">
+      <source src="video/Raindrops.webm">
+    </video>
+    <div class="content">
+      <h1>Test video background 1</h1>
+    </div>
+  </div>
+  <div class="section">
+    <video autoplay muted loop>
+      <source src="video/ocean.jpg">
+      <source src="video/ocean.mp4">
+      <source src="video/ocean.ogv">
+      <source src="video/ocean.webm">
+    </video>
+    <div class="content">
+      <h1>Test video background 1</h1>
     </div>
   </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="lib/vide/jquery.vide.min.js"></script>
+
+
 </body>
+
 </html>
