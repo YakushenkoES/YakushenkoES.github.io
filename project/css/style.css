@@ -904,6 +904,11 @@ section.feedback .feedback-bg-hand {
     right: -2.5rem;
   }
 }
+@media (max-width: 767.98px) {
+  section.feedback .feedback-form button.button {
+    width: 100%;
+  }
+}
 html {
   font-size: 10px;
 }
