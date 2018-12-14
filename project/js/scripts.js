@@ -38,4 +38,17 @@ $(document).ready(function () {
       }
     ]
   });
+
+
+  $(".feedback-slider").slick({
+    lazyLoad: 'ondemand',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-btn slick-next"></button>'
+  }
+
+  );
 });
