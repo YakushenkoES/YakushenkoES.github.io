@@ -33,4 +33,4 @@ My test work
 
 [M6L20 Видеофон](https://YakushenkoES.github.io/M6L20/Index.html "Видеофон") - Видеофон
 
-[M6L21 Parallax](https://YakushenkoES.github.io/M6L20/Index.html "Parallax") - Параллакс эффект
+[M6L21 Parallax](https://YakushenkoES.github.io/M6L21/Index.html "Parallax") - Параллакс эффект
