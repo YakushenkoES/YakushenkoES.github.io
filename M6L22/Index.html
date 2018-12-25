@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=2ca45101-5819-4c5b-8b48-196c41addf8d&lang=ru_RU" type="text/javascript">
+  </script>
+</head>
+
+<body>
+  <section class="map-section">
+    <div class="map-container">
+      <div id="map"></div>
+      <div class="contacts">
+        <h3 class="contacts-header">Контакты</h3>
+        <address>
+          <p class="address">г. Москва,<br>Варшавское шоссе, дом 16,<br>корпус 1, офис №8</p>
+          <p class="distance">200 от м. Театральная</p>
+          <a class="phone" href="tel:+74994098725 ">+7 (499) 409-87-25 </a>
+          <a class="mail" href="mailto:info@vashsite.ru">info@vashsite.ru</a>
+        </address>
+      </div>
+    </div>
+    <div class="map-caption">
+      <div class="logo">
+        <img src="img/logo.png" alt="logo">
+        <div class="logo-text">
+          <span>Технологии<br>Пожарной<br>Безопасности</span>
+        </div>
+      </div>
+      <div class="description">
+        <span>Сертификация пожарной безопасности<br>Работаем по России и странам</span>
+      </div>
+      <address class="addres-block">
+        <a class="phone" href="tel:+74994098725">+7 (499) 409-87-25</a>
+        <p class="address">г. Москва, Варшавское шоссе,<br>дом 16, корпус 1, офис №8 </p>
+      </address>
+    </div>
+  </section>
+
+  <script>
+    ymaps.ready(init);
+
+    function init() {
+      // Создание карты.    
+      var myMap = new ymaps.Map("map", {
+          // Координаты центра карты.
+          // Порядок по умолчанию: «широта, долгота».
+          // Чтобы не определять координаты центра карты вручную,
+          // воспользуйтесь инструментом Определение координат.
+          center: [55.862391, 37.428500],
+          // Уровень масштабирования. Допустимые значения:
+          // от 0 (весь мир) до 19.
+          zoom: 17,
+
+          // Маршрут
+          controls: ['zoomControl','fullscreenControl'],
+
+        }),
+
+        myPlacemark = new ymaps.Placemark([55.862329, 37.429918], {
+          hintContent: 'Вилиса Лацисса<br>ул., 7 корпус 4',
+          balloonContent: 'Вилиса Лацисса<br>ул., 7 корпус 4'
+        }, {
+          // Опции.
+          // Необходимо указать данный тип макета.
+          iconLayout: 'default#image',
+          // Своё изображение иконки метки.
+          iconImageHref: 'img/pin.png',
+          // Размеры метки.
+          iconImageSize: [28, 62],
+          // Смещение левого верхнего угла иконки относительно
+          // её "ножки" (точки привязки).
+          iconImageOffset: [-15, -44]
+        });
+
+      myMap.geoObjects
+        .add(myPlacemark);
+        myMap.behaviors.disable('scrollZoom'); 
+    }
+  </script>
+
+</body>
+
+</html>
