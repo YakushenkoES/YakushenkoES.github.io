@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/YakushenkoES/YakushenkoES.github.io/react_intensive/precache-manifest.078b6ed8258ecd007e4343426285d48b.js"
+  "/react_intensive/precache-manifest.713fcd9035582f1bad652e2fc8698fbf.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/YakushenkoES/YakushenkoES.github.io/react_intensive/index.html", {
+workbox.routing.registerNavigationRoute("/react_intensive/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
