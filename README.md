@@ -1,4 +1,7 @@
 # Yakushenko Evgeny
+
+
+[React slider](https://YakushenkoES.github.io/react_intensive/Index.html "React slider") - реакт интенсив
 My test work
 
 [ПРОЕКТ](https://YakushenkoES.github.io/project/Index.html "Проект") - штукатурка главный экран адаптив
